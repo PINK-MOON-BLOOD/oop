@@ -1,0 +1,641 @@
+//                        for( int i=0; i<puppet0.length; ++i ){
+//
+//                            if((puppet0[i] != null && puppet0[i].isActive() && puppet0[i].isNetral()) || (puppet0[i] != null && puppet0[i].isActive() && puppet0[i].isBlue())) {
+//
+//                                puppet0[i].RecRED();
+//                                puppet0[i].TextRED();
+//                                puppet0[i].setRed(true);
+//                                puppet0[i].setNetral(false);
+//                                puppet0[i].setBlue(false);
+//                                System.out.println(puppet0[i]);
+//                            }
+//                        }
+//
+//                        for(int i = 0; i<puppet1.length; ++i){
+//
+//                            if((puppet1[i] != null && puppet1[i].isActive() && puppet1[i].isNetral()) || (puppet1[i] != null && puppet1[i].isActive() && puppet1[i].isBlue())) {
+//
+//                                puppet1[i].RecRED();
+//                                puppet1[i].TextRED();
+//                                puppet1[i].setRed(true);
+//                                puppet1[i].setNetral(false);
+//                                puppet1[i].setBlue(false);
+//                                System.out.println(puppet1[i]);
+//                            }
+//                        }
+//
+//                        for(int i = 0; i<puppet2.length; ++i){
+//
+//                            if(puppet2[i] != null && (puppet2[i].isActive() && puppet2[i].isNetral()) || (puppet2[i] != null && puppet2[i].isActive() && puppet2[i].isBlue())) {
+//
+//                                puppet2[i].RecRED();
+//                                puppet2[i].TextRED();
+//                                puppet2[i].setRed(true);
+//                                puppet2[i].setNetral(false);
+//                                puppet2[i].setBlue(false);
+//                                System.out.println(puppet2[i]);
+//                            }
+//                        }
+
+
+
+//                        for( int i=0; i<puppet0.length; ++i ){
+//
+//                            if((puppet0[i] != null && puppet0[i].isActive() && puppet0[i].isNetral()) || (puppet0[i] != null && puppet0[i].isActive() && puppet0[i].isRed())) {
+//
+//                                puppet0[i].RecBLUE();
+//                                puppet0[i].TextBlue();
+//                                puppet0[i].setRed(false);
+//                                puppet0[i].setNetral(false);
+//                                puppet0[i].setBlue(true);
+//                                System.out.println(puppet0[i]);
+//                            }
+//                        }
+//
+//                        for(int i = 0; i<puppet1.length; ++i){
+//
+//                            if((puppet1[i] != null && puppet1[i].isActive() && puppet1[i].isNetral()) || (puppet1[i] != null && puppet1[i].isActive() && puppet1[i].isBlue())) {
+//
+//                                puppet1[i].RecBLUE();
+//                                puppet1[i].TextBlue();
+//                                puppet1[i].setRed(false);
+//                                puppet1[i].setNetral(false);
+//                                puppet1[i].setBlue(true);
+//                                System.out.println(puppet1[i]);
+//                            }
+//                        }
+//
+//                        for(int i = 0; i<puppet2.length; ++i){
+//
+//                            if((puppet2[i] != null && puppet2[i].isActive() && puppet2[i].isNetral()) || (puppet2[i] != null && puppet2[i].isActive() && puppet2[i].isBlue())) {
+//
+//                                puppet2[i].RecBLUE();
+//                                puppet2[i].TextBlue();
+//                                puppet2[i].setRed(false);
+//                                puppet2[i].setNetral(false);
+//                                puppet2[i].setBlue(true);
+//                                System.out.println(puppet2[i]);
+//                            }
+//                        }
+
+
+
+//                        for( int i=0; i < puppet0.length; ++i ){
+//
+//                            if((puppet0[i] != null && puppet0[i].isActive() && puppet0[i].isBlue()) || (puppet0[i] != null && puppet0[i].isActive() && puppet0[i].isRed())) {
+//
+//                                puppet0[i].RecGray();
+//                                puppet0[i].OriginalText();
+//                                puppet0[i].setRed(false);
+//                                puppet0[i].setNetral(true);
+//                                puppet0[i].setBlue(false);
+//                                System.out.println(puppet0[i]);
+//                            }
+//                        }
+//
+//                        for(int i = 0; i < puppet1.length; ++i){
+//
+//                            if((puppet1[i] != null && puppet1[i].isActive() && puppet1[i].isBlue()) || (puppet1[i] != null && puppet1[i].isActive() && puppet1[i].isRed())) {
+//
+//                                puppet1[i].RecGray();
+//                                puppet1[i].OriginalText();
+//                                puppet1[i].setRed(false);
+//                                puppet1[i].setNetral(true);
+//                                puppet1[i].setBlue(false);
+//                                System.out.println(puppet1[i]);
+//                            }
+//                        }
+//
+//                        for(int i = 0; i < puppet2.length; ++i){
+//
+//                            if((puppet2[i] != null && puppet2[i].isActive() && puppet2[i].isBlue()) || (puppet2[i] != null && puppet2[i].isActive() && puppet2[i].isRed())) {
+//
+//                                puppet2[i].RecGray();
+//                                puppet2[i].OriginalText();
+//                                puppet2[i].setRed(false);
+//                                puppet2[i].setNetral(true);
+//                                puppet2[i].setBlue(false);
+//                                System.out.println(puppet2[i]);
+//                            }
+//                        }
+
+
+
+//        ImageView FactoryKrat = new ImageView(HelloApplication.class.getResource("крат.jpg").toString());
+//        Label label = new Label("   Factory-Krat");
+//        label.setLayoutX(110);
+//        label.setLayoutY(1300);
+//        Rectangle factoryk = new Rectangle(100,22);
+//        factoryk.setFill(Color.TRANSPARENT);
+//        factoryk.setStrokeWidth(3);
+//        factoryk.setStroke(Color.CORAL);
+//        factoryk.setX(110);
+//        factoryk.setY(1300);
+//        group.getChildren().addAll(FactoryKrat,label,factoryk);
+//        FactoryKrat.setY(1300);
+//        FactoryKrat.setX(0);
+
+//        ImageView FactoryTark = new ImageView(HelloApplication.class.getResource("тарк.jpg").toString());
+//        Label label1 = new Label("   Factory-Tark");
+//        label1.setLayoutX(750);
+//        label1.setLayoutY(390);
+//        Rectangle factoryt = new Rectangle(100,22);
+//        factoryt.setFill(Color.TRANSPARENT);
+//        factoryt.setStrokeWidth(3);
+//        factoryt.setStroke(Color.CORAL);
+//        factoryt.setX(750);
+//        factoryt.setY(390);
+//        group.getChildren().addAll(FactoryTark ,label1,factoryt);
+//        FactoryTark.setX(700);
+//        FactoryTark.setY(400);
+//
+//        ImageView Tower = new ImageView(HelloApplication.class.getResource("Tower_Radiant_model.png").toString());
+//        Label towerl = new Label(" Tower");
+//        towerl.setLayoutX(300);
+//        towerl.setLayoutY(333);
+//        Rectangle tower = new Rectangle(100,22);
+//        tower.setFill(Color.TRANSPARENT);
+//        tower.setStrokeWidth(3);
+//        tower.setStroke(Color.CORAL);
+//        tower.setX(290);
+//        tower.setY(330);
+//        group.getChildren().addAll(Tower,tower,towerl);
+//        Tower.setX(300);
+//        Tower.setY(350);
+//        group.getChildren().add(microObjectsLabel);
+
+
+//for( int i=0; i<puppet0.length; ++i ){
+//            //виклик конструктора базового класу
+//            puppet0[i]= new Puppet("Puppet" +Integer.toString(i+1) , i,25, (int) (75.0+ 10.0*i), rnd.nextDouble() * scene.getWidth(), rnd.nextDouble() * scene.getHeight());
+//
+//            puppet0[i].resurrect();
+//            puppe.add(puppet0[i]);
+//            System.out.println(puppet0[i].toString());
+//        }
+
+//            for(Puppet puppet1 : puppe){
+//                puppet1.resurrect();
+//
+//                labelName.setText(name);
+//                labelName.setLayoutX(xPos);
+//                labelName.setLayoutY(yPos);
+//
+//                life.setStartX(xPos);
+//                life.setStartY(yPos + 15);
+//                life.setEndX(xPos + puppet.getHealth());
+//                life.setEndY(yPos + 15);
+//                life.setStrokeWidth(5);
+//                life.setStroke(Color.LIGHTGREEN);
+//
+//                //puppet = new ImageView(HelloApplication.puppet);
+////                    puppet.setX();
+////                    puppet.setY();
+//
+//                //isActive=false;
+//
+//                //rectActive= new Rectangle(getX()+5,getY()+5,105,105+imageDeltaY());
+//                rectActive.setX(xPos + 5);
+//                rectActive.setY(yPos + 5);
+//                rectActive.setFill(Color.TRANSPARENT);
+//                rectActive.setStrokeWidth(2);
+//                rectActive.setStroke(Color.GRAY);
+//
+//                System.out.println(puppet1 instanceof Puppet);
+//            }
+
+
+//            group.getChildren().clear(); // Clear the current scene
+//
+//            puppe.clear();
+//            Puppet []puppet0 = new Puppet[puppe1.size()];
+//            int counter = 0;
+//            for (Puppet puppet : puppe1) {
+//                if (puppet instanceof Puppet) {
+//
+//                    Puppet newPuppet = new Puppet(puppet.getName(), puppet.getLevel(), puppet.getdamage(), puppet.getHealth(), puppet.getxPos(), puppet.getyPos());
+//                    ((Puppet)newPuppet).resurrect();
+//                    puppe.add(newPuppet);
+//                    System.out.println(newPuppet.toString());
+//                    counter++;
+//
+//                } else if (puppet instanceof Puppet_of_the_future) {
+//
+//                    //((Puppet_of_the_future) puppet).resurrectt();
+//                } else if (puppet instanceof Lead_of_Parade) {
+//                    //((Lead_of_Parade) puppet).resurrecttt();
+//
+//                    break;
+//                }
+//
+//            }
+
+//            group.getChildren().clear();
+//
+//            Macro.clear();
+
+
+//    public boolean isNetralD() {
+//        return netralD;
+//    }
+//
+//    public void setNetralD(boolean netralD) {
+//        this.netralD = netralD;
+//    }
+//
+//    public boolean isBlueLD() {
+//        return blueLD;
+//    }
+//
+//    public void setBlueLD(boolean blueLD) {
+//        this.blueLD = blueLD;
+//    }
+//
+//    public boolean isRedLD() {
+//        return redLD;
+//    }
+//
+//    public void setRedLD(boolean redLD) {
+//        this.redLD = redLD;
+//    }
+
+    @Override
+//    public String toString() {
+//        return "Lead_of_Parade{" +
+//                "netralD=" + isNetral() +
+//                ", blueLD=" + isBlue() +
+//                ", redLD=" + isRed() +
+//             //   ", LeadOfParad=" + LeadOfParad +
+//              //  ", rectActiveLP=" + rectActiveLP +
+//               // ", labelLF=" + labelLF +
+//                ", life=" + life +
+//                '}'+"\n";
+//    }
+
+//    public void move( double dx, double dy ){
+//        setxPos(getxPos() + dx);
+//        setyPos(getyPos() + dy);
+//        setCoordinates(getHealth());
+//        System.out.println("Active micro-object(LeadOfParad) move");
+//    }
+
+//    public  void PerelikMicro(ArrayList<Puppet> puppe){
+//        Dialog<Puppet> dialog = new Dialog<>();
+//        dialog.setTitle("SEARCH MICRO WHO ");
+//
+//        CheckBox checkBox1 = new CheckBox();
+//        CheckBox checkBox2 = new CheckBox();
+//        CheckBox checkBox3 = new CheckBox();
+//        RadioButton radioButton = new RadioButton();
+//
+//        GridPane gridPane = new GridPane();
+//        gridPane.add(new Label("Factory_Krat:"),0,0);
+//        gridPane.add(checkBox1,3,0);
+//        gridPane.add(new Label("Factory_Tark:"),0,2);
+//        gridPane.add(checkBox2,3,2);
+//        gridPane.add(new Label("FREE-PUPPET:"),0,3);
+//        gridPane.add(checkBox3,3,3);
+//        gridPane.add(new Label("Sort Name: "),0,46);
+//        gridPane.add(radioButton,4,4);
+//
+//        dialog.getDialogPane().setContent(gridPane);
+//
+//        ButtonType okButtonType = new ButtonType("OK", ButtonBar.ButtonData.OK_DONE);
+//        dialog.getDialogPane().getButtonTypes().addAll(okButtonType, ButtonType.CANCEL);
+//
+//        dialog.setResultConverter(dialogButton ->{
+//            if(dialogButton == okButtonType){
+//                try {
+//                    if(radioButton.isSelected()){
+//                        if(checkBox1.isSelected()){
+//                        StringBuilder redTeamMicroObjects = new StringBuilder();
+//                            System.out.println(puppe);
+//                        Collections.sort(puppe, Comparator.comparing(Puppet::getName));
+//                            System.out.println(puppe);
+//                        for(Puppet p : puppe){
+//                            if(p.isRed()){
+//                                redTeamMicroObjects.append(p.toString()).append("\n");
+//                            }
+//                        }
+//                        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+//                        alert.setTitle(" Micro Objects");
+//                        alert.setHeaderText(null);
+//                        alert.setContentText("Micro Objects READ-TEAM: " + "\n" + redTeamMicroObjects);
+//                        alert.showAndWait();
+//                    }
+//
+//                        if(checkBox2.isSelected()){
+//                            StringBuilder blueTeamMicroObjects = new StringBuilder();
+//                            Collections.sort(puppe, Comparator.comparing(Puppet::getName));
+//                            for(Puppet p : puppe){
+//                                if(p.isBlue()){
+//
+//                                    blueTeamMicroObjects.append(p.toString()).append("\n");
+//                                }
+//                            }
+//                            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+//                            alert.setTitle(" Micro Objects");
+//                            alert.setHeaderText(null);
+//                            alert.setContentText("Micro Objects BLUE-TEAM: " + "\n" + blueTeamMicroObjects);
+//                            alert.showAndWait();
+//                        }
+//
+//                        if(checkBox3.isSelected()){
+//                            StringBuilder free_puppet = new StringBuilder();
+//                            Collections.sort(puppe, Comparator.comparing(Puppet::getName));
+//                            for(Puppet p : puppe){
+//                                if(p.isBlue()){
+//
+//                                    free_puppet.append(p.toString()).append("\n");
+//                                }
+//                            }
+//                            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+//                            alert.setTitle(" Micro Objects");
+//                            alert.setHeaderText(null);
+//                            alert.setContentText("Micro Objects FREE_PUPPET: " + "\n" + free_puppet);
+//                            alert.showAndWait();
+//                        }
+//                    }
+//
+//
+//                }catch (Exception e){
+//                    System.out.println(e);
+//                }
+//            }
+//            return null;
+//        });
+//        Optional<Puppet> result = dialog.showAndWait();
+//
+//
+//    }
+
+
+  Thread healthRegenThread = new Thread(() -> {
+            while (puppet.getHealth() < 1000 && puppet.isActive()) {
+                try {
+                    Thread.sleep(1000); // чекаємо 1 секунду
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                synchronized (puppet) {
+                    int newHealth = puppet.getHealth() + 2;
+                    if (newHealth > 1000) {
+                        puppet.setHealth(1000);
+                    } else {
+                        puppet.setHealth(newHealth);
+                    }
+                    System.out.println(puppet);
+                }
+            }
+        });
+        healthRegenThread.start();
+
+public Puppet interact(Puppet puppet){
+        if(puppet instanceof Lead_of_Parade){
+            if (puppet.isNetral() ){
+                Thread towerRec = new Thread(() -> {
+                    try {
+                        Thread.sleep(3000); // чекаємо
+                        recTower.setStroke(Color.GRAY);
+                        if (recTower.getStroke().equals(Color.GRAY)){
+                            Thread.currentThread().interrupt();
+                        }
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                });
+                towerRec.start();
+
+
+//                Timer timer0 = new Timer();
+//                TimerTask task0 = new TimerTask() {
+//                    @Override
+//                    public void run() {
+//                        recTower.setStroke(Color.GRAY);
+//                    }
+//
+//            };
+//                timer0.schedule(task0,2000);
+            } else if (puppet.isRed()) {
+                Timer timer1 = new Timer();
+                TimerTask task1 = new TimerTask() {
+                    @Override
+                    public void run() {
+                        recTower.setStroke(Color.RED);
+                    }
+
+                };
+                timer1.schedule(task1,2000);
+
+            } else if (puppet.isBlue()) {
+                Timer timer2 = new Timer();
+                TimerTask task2 = new TimerTask() {
+                    @Override
+                    public void run() {
+                        recTower.setStroke(Color.BLUE);
+                    }
+
+                };
+                timer2.schedule(task2,2000);
+
+            }
+//            else if ((puppet.isBlue() && puppet.isRed()) ||(puppet.isBlue() && puppet.isNetral())||
+//                    (puppet.isRed() && puppet.isNetral()) || (puppet.isRed() && puppet.isBlue())) {
+//                Timer timer2 = new Timer();
+//                TimerTask task2 = new TimerTask() {
+//                    @Override
+//                    public void run() {
+//                        recTower.setStroke(Color.YELLOW);
+//                    }
+//
+//                };
+//                timer2.schedule(task2,2000);
+//
+//            }
+//        } else if (puppet instanceof Puppet_of_the_future) {
+//            if (puppet.isNetral() ){
+//                Timer timer0 = new Timer();
+//                TimerTask task0 = new TimerTask() {
+//                    @Override
+//                    public void run() {
+//                        recTower.setStroke(Color.GRAY);
+//                    }
+//
+//                };
+//                timer0.schedule(task0,2000);
+//            } else if (puppet.isRed()) {
+//                Timer timer1 = new Timer();
+//                TimerTask task1 = new TimerTask() {
+//                    @Override
+//                    public void run() {
+//                        recTower.setStroke(Color.RED);
+//                    }
+//
+//                };
+//                timer1.schedule(task1,2000);
+//
+//            } else if (puppet.isBlue()) {
+//                Timer timer2 = new Timer();
+//                TimerTask task2 = new TimerTask() {
+//                    @Override
+//                    public void run() {
+//                        recTower.setStroke(Color.BLUE);
+//                    }
+//
+//                };
+//                timer2.schedule(task2,2000);
+//
+//            }
+//
+//
+//        } else if (puppet instanceof Puppet) {
+//            if (puppet.isNetral() ){
+//                Timer timer0 = new Timer();
+//                TimerTask task0 = new TimerTask() {
+//                    @Override
+//                    public void run() {
+//                        recTower.setStroke(Color.GRAY);
+//                    }
+//
+//                };
+//                timer0.schedule(task0,2000);
+//            } else if (puppet.isRed()) {
+//                Timer timer1 = new Timer();
+//                TimerTask task1 = new TimerTask() {
+//                    @Override
+//                    public void run() {
+//                        recTower.setStroke(Color.RED);
+//                    }
+//
+//                };
+//                timer1.schedule(task1,2000);
+//
+//            } else if (puppet.isBlue()) {
+//                Timer timer2 = new Timer();
+//                TimerTask task2 = new TimerTask() {
+//                    @Override
+//                    public void run() {
+//                        recTower.setStroke(Color.BLUE);
+//                    }
+//
+//                };
+//                timer2.schedule(task2,2000);
+//
+//            }
+
+        }
+		
+		   Thread towerRec = new Thread(() -> {
+                    try {
+                        if(){}
+                        Thread.sleep(3000); // чекаємо
+                        recTower.setStroke(Color.GRAY);
+                        if (recTower.getStroke().equals(Color.GRAY)){
+                            Thread.currentThread().interrupt();
+                        }
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                });
+                towerRec.start();
+				
+				
+				
+				else if ((puppet.isBlue() && puppet.isRed()) ||(puppet.isBlue() && puppet.isNetral())||
+//                    (puppet.isRed() && puppet.isNetral()) || (puppet.isRed() && puppet.isBlue())) {
+//                Timer timer2 = new Timer();
+//                TimerTask task2 = new TimerTask() {
+//                    @Override
+//                    public void run() {
+//                        recTower.setStroke(Color.YELLOW);
+//                    }
+//
+//                };
+//                timer2.schedule(task2,2000);
+//
+//            }
+//        } else if (puppet instanceof Puppet_of_the_future) {
+//            if (puppet.isNetral() ){
+//                Timer timer0 = new Timer();
+//                TimerTask task0 = new TimerTask() {
+//                    @Override
+//                    public void run() {
+//                        recTower.setStroke(Color.GRAY);
+//                    }
+//
+//                };
+//                timer0.schedule(task0,2000);
+//            } else if (puppet.isRed()) {
+//                Timer timer1 = new Timer();
+//                TimerTask task1 = new TimerTask() {
+//                    @Override
+//                    public void run() {
+//                        recTower.setStroke(Color.RED);
+//                    }
+//
+//                };
+//                timer1.schedule(task1,2000);
+//
+//            } else if (puppet.isBlue()) {
+//                Timer timer2 = new Timer();
+//                TimerTask task2 = new TimerTask() {
+//                    @Override
+//                    public void run() {
+//                        recTower.setStroke(Color.BLUE);
+//                    }
+//
+//                };
+//                timer2.schedule(task2,2000);
+//
+//            }
+//
+//
+//        } else if (puppet instanceof Puppet) {
+//            if (puppet.isNetral() ){
+//                Timer timer0 = new Timer();
+//                TimerTask task0 = new TimerTask() {
+//                    @Override
+//                    public void run() {
+//                        recTower.setStroke(Color.GRAY);
+//                    }
+//
+//                };
+//                timer0.schedule(task0,2000);
+//            } else if (puppet.isRed()) {
+//                Timer timer1 = new Timer();
+//                TimerTask task1 = new TimerTask() {
+//                    @Override
+//                    public void run() {
+//                        recTower.setStroke(Color.RED);
+//                    }
+//
+//                };
+//                timer1.schedule(task1,2000);
+//
+//            } else if (puppet.isBlue()) {
+//                Timer timer2 = new Timer();
+//                TimerTask task2 = new TimerTask() {
+//                    @Override
+//                    public void run() {
+//                        recTower.setStroke(Color.BLUE);
+//                    }
+//
+//                };
+//                timer2.schedule(task2,2000);
+//
+//            }
+
+
+
+1.	Leas of P веб-сайт. URL: https://en.wikipedia.org/wiki/Lies_of_P (дата звернення:).
+2.	C++  веб-сайт. URL: https://uk.wikipedia.org/wiki/C%2B%2B (дата звернення:).
+3.	C# веб-сайт.URL:
+https://en.wikipedia.org/wiki/C_Sharp_(programming_language) (дата звернення:).
+4.	Java веб-сайт.URL: https://en.wikipedia.org/wiki/Java_(programming_language) (дата звернення:).
+5.	JavaFx веб-сайт. URL:https://coderlessons.com/tutorials/java-tekhnologii/vyuchi-javafx/javafx-izobrazheniia (дата звернення:).
+6.	StudFiles веб-сайт. https://studfile.net/preview/9445425/page:117/(дата звернення:).
+7.	Вікіпедія веб-сайт https://uk.wikipedia.org/wiki/%D0%94%D1%96%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%B0_%D0%BF%D0%BE%D1%81%D0%BB%D1%96%D0%B4%D0%BE%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D1%96 
+(дата звернення: 09.06.2024).
+8.	Doug Lowe. Java All-in-One For Dummies, 6th Edition. Sebastopol, CA, US: For Dummies, 2020. 912 p. (дата звернення: 09.06.2024).

@@ -1,0 +1,221 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "com.example.lab4.HelloApplication",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_1322970774 { 
+   	label=example
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_134608309 { 
+   	label=lab4
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   HelloApplication813690264[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)HelloApplication</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   scrollBarH: ScrollBar [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   scrollBarV: ScrollBar [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ changeActiveMicroObjectParameters()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ createMicroObjectDialog(puppet0: Puppet[], puppet1: Puppet_of_the_future[], puppet2: Lead_of_Parade[])</TD></TR>
+<TR><TD ALIGN="LEFT" >+ main(args: String[])</TD></TR>
+<TR><TD ALIGN="LEFT" >+ start(primaryStage: Stage)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Lead_of_Parade813690264[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Lead_of_Parade</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   LeadOfParad: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   labelLF: Label [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   life: Line [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   rectActiveLP: Rectangle [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ deleteActiveMicroObject()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ flipActivation2(): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ handleEscKeyPress()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ move(dx: double, dy: double)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ resurrecttt()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ tryActivate(mx: double, my: double): boolean</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Puppet813690264[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Puppet</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   Health: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   damage: double [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   isActive: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   labelName: Label [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   level: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   life: Line [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   name: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   puppet: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   puppetImage: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   rectActive: Rectangle [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   stateObj: StateObj [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   xPos: double [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   yPos: double [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" ># clone(): Object</TD></TR>
+<TR><TD ALIGN="LEFT" >+ compareTo(o: Puppet): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ deleteActiveMicroObject()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ flipActivation(): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ handleEscKeyPress()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ imageDeltaX(): double</TD></TR>
+<TR><TD ALIGN="LEFT" >+ imageDeltaY(): double</TD></TR>
+<TR><TD ALIGN="LEFT" >+ move(dx: double, dy: double)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ resurrect()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ tryActivate(mx: double, my: double): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ updateMicroObjectsLabel()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Puppet_of_the_future813690264[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Puppet_of_the_future</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   labelPF: Label [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   life: Line [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   puppetOfTheFuture: ImageView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   rectActivePF: Rectangle [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ deleteActiveMicroObject()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ flipActivation1(): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ handleEscKeyPress()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ imageDeltaX(): double</TD></TR>
+<TR><TD ALIGN="LEFT" >+ imageDeltaY(): double</TD></TR>
+<TR><TD ALIGN="LEFT" >+ move(dx: double, dy: double)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ resurrectt()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ tryActivate(mx: double, my: double): boolean</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+StateObj813690264[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)StateObj</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   stateObj: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" ># clone(): StateObj</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+} 
+
+'edges    
+Puppet813690264 -> Lead_of_Parade813690264[arrowhead=none, arrowtail=empty, dir=both];
+Puppet813690264 -> Puppet_of_the_future813690264[arrowhead=none, arrowtail=empty, dir=both];
+Puppet813690264 -> StateObj813690264[label="stateObj
+[0..1]"];
+    
+}
+@enduml
